@@ -1,0 +1,34 @@
+SPEAK UP WITH MARTY — WEB PRO VLASTNI HOSTING
+
+Nahrajte index.html a slozku assets do korenove slozky webu (obvykle public_html nebo www).
+Neni potreba instalace ani build. Slozka tools se na hosting nenahrava.
+
+STRUKTURA
+  index.html            stranka
+  assets/css/style.css  vzhled
+  assets/js/main.js     interakce
+  assets/img/           PNG vyrezy a placeholdery (ph-*.png)
+  assets/reference.png  puvodni navrhova kolaz (zdroj vyrezu)
+  tools/make_assets.py  skript, ktery PNG assety vyrobi
+
+VARIANTY
+Dve nalady se prepinaji v pilulce vlevo dole: Pink energy / British scrapbook.
+Primy vyber: ?design=pink nebo ?design=editorial. Volba se pamatuje v prohlizeci.
+
+INTERAKTIVNI PRVKY
+Preklady slov (najeti / klepnuti), rozbalovani lekci, kviz, otocne kartičky s idiomy,
+FAQ, kontakt pres Instagram, parallax kolazi, naklon karet a na pocitaci
+pretahovani samolepek a fotek mysi.
+
+FOTKY
+Fotky Marty jsou vyrezy z dodane navrhove kolaze (nizke rozliseni).
+Soubory ph-*.png jsou placeholdery – popisek rika, jaka fotka tam patri.
+Pro finalni web dodejte puvodni fotky a pregenerujte assety:
+  python -m pip install "rembg[cpu]" pillow numpy
+  python tools/make_assets.py
+(v tools/make_assets.py upravte zdroj a vyrezy; postavy se automaticky vyriznou z pozadi)
+
+PRED OSTRYM SPUSTENIM
+Formular pro PDF je pouze demonstracni. Neuklada e-maily ani neposila zpravy.
+Pripojte e-mailovy nastroj, doplnte PDF a informace o zpracovani osobnich udaju.
+Fonty se nacitaji z Google Fonts; bez pripojeni se pouzije nahradni font.
