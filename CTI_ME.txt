@@ -11,10 +11,6 @@ STRUKTURA
   assets/reference.png  puvodni navrhova kolaz (zdroj vyrezu)
   tools/make_assets.py  skript, ktery PNG assety vyrobi
 
-VARIANTY
-Dve nalady se prepinaji v pilulce vlevo dole: Pink energy / British scrapbook.
-Primy vyber: ?design=pink nebo ?design=editorial. Volba se pamatuje v prohlizeci.
-
 INTERAKTIVNI PRVKY
 Preklady slov (najeti / klepnuti), rozbalovani lekci, kviz, otocne kartičky s idiomy,
 FAQ, kontakt pres Instagram, parallax kolazi, naklon karet a na pocitaci

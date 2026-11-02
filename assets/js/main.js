@@ -5,21 +5,6 @@
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const finePointer = matchMedia('(hover: hover) and (pointer: fine)').matches;
 
-  /* ---------- přepínač varianty (?design=pink|editorial, pamatuje se) ---------- */
-  const themeButtons = $$('[data-theme]');
-  function setTheme(theme) {
-    document.body.classList.toggle('editorial', theme === 'editorial');
-    themeButtons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.theme === theme)));
-    try { localStorage.setItem('marty-design', theme); } catch {}
-    const u = new URL(location.href);
-    u.searchParams.set('design', theme);
-    history.replaceState({}, '', u);
-  }
-  let initial = new URLSearchParams(location.search).get('design');
-  if (!initial) { try { initial = localStorage.getItem('marty-design'); } catch {} }
-  setTheme(initial === 'editorial' ? 'editorial' : 'pink');
-  themeButtons.forEach(b => b.addEventListener('click', () => setTheme(b.dataset.theme)));
-
   /* ---------- hlavička a mobilní menu ---------- */
   const header = $('.site-header');
   const onScroll = () => header.classList.toggle('scrolled', scrollY > 10);
