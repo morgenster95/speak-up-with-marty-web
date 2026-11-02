@@ -96,10 +96,10 @@
 
   /* ---------- kvíz ---------- */
   const QUIZ = [
-    { q: 'Kolega řekne „That’s not bad at all.“ Co tím myslí?', a: ['Je to docela slabé.', 'Je to vlastně hodně dobré.', 'Nechce to komentovat.'], ok: 1,
-      why: 'Britský understatement. „Not bad at all“ je upřímná pochvala, často silnější, než zní.' },
-    { q: 'Šéfová napíše „Perhaps you could have a look at this?“ Co to je?', a: ['Nezávazný nápad.', 'Jasný úkol, jen zdvořile zabalený.', 'Otázka, jestli máš čas.'], ok: 1,
-      why: 'Zdvořilý obal, ale pokyn. Britové často zadávají úkoly nepřímo, tak to nepřehlédni.' },
+    { q: 'Posíláš kolegovi připomínku. Co zní přirozeně?', a: ['I remind you that…', 'Just a gentle reminder that…', 'Don’t forget that…'], ok: 1,
+      why: '„Gentle reminder“ je zdvořilé a běžné. „I remind you“ zní spíš jako úřední výtka.' },
+    { q: 'Šéfová napíše „Could you have a look at this when you get a chance?“ Co to je?', a: ['Nezávazný nápad.', 'Úkol, jen zdvořile zabalený.', 'Otázka, jestli máš čas.'], ok: 1,
+      why: 'Zdvořilý obal, ale pořád pokyn. V angličtině se úkoly často zadávají nepřímo, tak to nepřehlédni.' },
     { q: 'Chceš na poradě nesouhlasit. Co zní nejpřirozeněji?', a: ['You are wrong.', 'I see where you’re coming from, but…', 'I totally disagree with you.'], ok: 1,
       why: 'Nejdřív uznáš pohled druhého, pak přidáš svůj. Diplomaticky, ale bez strojenosti.' },
   ];
