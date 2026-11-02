@@ -96,12 +96,12 @@
 
   /* ---------- kvíz ---------- */
   const QUIZ = [
-    { q: 'Byla jsem ve fitku. Jak to říct anglicky?', a: ['I was in the fitness.', 'I was at the gym.', 'I was in the fit.'], ok: 1,
-      why: '„Fitness“ je spíš obor nebo kondice. Do posilovny se chodí „to the gym“.' },
-    { q: 'Jak říct „Těším se na to“?', a: ['I’m looking forward to it.', 'I’m happy on it.', 'I look forward on it.'], ok: 0,
-      why: '„Look forward to“ + to, na co se těšíš. Přesně tak.' },
-    { q: 'Kamarád ti platí kafe. Co mu řekneš?', a: ['You’re welcome!', 'That’s so kind of you!', 'Be my guest!'], ok: 1,
-      why: '„You’re welcome“ odpovídáš na poděkování a „Be my guest“ říká ten, kdo nabízí.' },
+    { q: 'Kolega řekne „That’s not bad at all.“ Co tím myslí?', a: ['Je to docela slabé.', 'Je to vlastně hodně dobré.', 'Nechce to komentovat.'], ok: 1,
+      why: 'Britský understatement. „Not bad at all“ je upřímná pochvala, často silnější, než zní.' },
+    { q: 'Šéfová napíše „Perhaps you could have a look at this?“ Co to je?', a: ['Nezávazný nápad.', 'Jasný úkol, jen zdvořile zabalený.', 'Otázka, jestli máš čas.'], ok: 1,
+      why: 'Zdvořilý obal, ale pokyn. Britové často zadávají úkoly nepřímo, tak to nepřehlédni.' },
+    { q: 'Chceš na poradě nesouhlasit. Co zní nejpřirozeněji?', a: ['You are wrong.', 'I see where you’re coming from, but…', 'I totally disagree with you.'], ok: 1,
+      why: 'Nejdřív uznáš pohled druhého, pak přidáš svůj. Diplomaticky, ale bez strojenosti.' },
   ];
   let qi = 0;
   const qEl = $('#quiz-q'), optEl = $('#quiz-options'), fbEl = $('#quiz-feedback'), nextEl = $('#quiz-next'), countEl = $('.quiz-count');
